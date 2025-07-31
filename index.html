@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Raj Sojitra</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <title>Raj Sojitra - Web Developer Portfolio</title>
+    <meta content="Professional portfolio of Raj Sojitra - Full Stack Web Developer specializing in Laravel, PHP, MySQL" name="description" />
+    <meta content="web developer, portfolio, Laravel, PHP, MySQL, freelancer" name="keywords" />
 
     <!-- Favicons -->
     <link href="assets/img/portfolio.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
@@ -20,105 +20,58 @@
     />
 
     <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- DevIcon CSS for Technology Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body class="index-page">
+    <!-- Header/Sidebar Navigation -->
     <header id="header" class="header dark-background d-flex flex-column">
       <i class="header-toggle d-xl-none bi bi-list"></i>
 
+      <!-- Profile Image -->
       <div class="profile-img">
-        <img src="assets/img/c2.png" alt="" class="img-fluid rounded-circle" />
+        <img src="assets/img/c2.png" alt="Raj Sojitra Profile" class="img-fluid rounded-circle" />
       </div>
 
-      <a
-        href="index.html"
-        class="logo d-flex align-items-center justify-content-center"
-      >
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+      <!-- Logo/Name -->
+      <a href="index.html" class="logo d-flex align-items-center justify-content-center">
         <h1 class="sitename">Raj Sojitra</h1>
       </a>
 
+      <!-- Social Media Links -->
       <div class="social-links text-center">
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a
-          href="https://www.instagram.com/the_raj_patel__01/profilecard/?igsh=MWZ1bXc5azl3dHRzcA=="
-          class="instagram"
-          ><i class="bi bi-instagram"></i
-        ></a>
-        <a
-          href="https://github.com/rajsojitra11?tab=repositories"
-          class="google-plus"
-          ><i class="bi bi-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/raj-sojitra-0a96bb2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          class="linkedin"
-          ><i class="bi bi-linkedin"></i
-        ></a>
+        <a href="#" class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/the_raj_patel__01/profilecard/?igsh=MWZ1bXc5azl3dHRzcA==" class="instagram" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://github.com/rajsojitra11?tab=repositories" class="google-plus" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/raj-sojitra-0a96bb2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
       </div>
 
+      <!-- Navigation Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li>
-            <a href="#hero" class="active"
-              ><i class="bi bi-house navicon"></i>Home</a
-            >
-          </li>
-          <li>
-            <a href="#about"><i class="bi bi-person navicon"></i> About</a>
-          </li>
-          <li>
-            <a href="#resume"
-              ><i class="bi bi-file-earmark-text navicon"></i> Resume</a
-            >
-          </li>
-          <li>
-            <a href="#portfolio"
-              ><i class="bi bi-award navicon"></i> Certificate</a
-            >
-          </li>
-          <li>
-            <a href="#services"
-              ><i class="bi bi-tools navicon"></i> Services</a
-            >
-          </li>
-          <li>
-            <a href="#projects"
-              ><i class="bi bi-archive navicon"></i></i> Projects</a
-            >
-          </li>
-
-          <li>
-            <a href="#contact"
-              ><i class="bi bi-envelope navicon"></i> Contact</a
-            >
-          </li>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-award navicon"></i> Certificate</a></li>
+          <li><a href="#services"><i class="bi bi-tools navicon"></i> Services</a></li>
+          <li><a href="#projects"><i class="bi bi-archive navicon"></i> Projects</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -128,29 +81,20 @@
       <section id="hero" class="hero section dark-background">
         <img
           src="https://i.pinimg.com/736x/ac/a7/6d/aca76d77c329f55675e3e43c7c50ae04.jpg"
-          alt=""
+          alt="Hero Background"
           data-aos="fade-in"
-          class=""
         />
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <h2>Raj Sojitra</h2>
           <p>
             I'm
-            <span class="typed" data-typed-items="Web Developer, Freelancer"
-              >Web Developer</span
-            ><span
-              class="typed-cursor typed-cursor--blink"
-              aria-hidden="true"
-            ></span
-            ><span
-              class="typed-cursor typed-cursor--blink"
-              aria-hidden="true"
-            ></span>
+            <span class="typed" data-typed-items="Web Developer, Freelancer">Web Developer</span>
+            <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
           </p>
         </div>
       </section>
-      <!-- /Hero Section -->
+      <!-- End Hero Section -->
 
       <!-- About Section -->
       <section id="about" class="about section">
@@ -168,55 +112,31 @@
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4 justify-content-center">
+            <!-- About Image -->
             <div class="col-lg-4">
-              <img src="assets/img/c3.jpg" class="img-fluid" alt="" />
+              <img src="assets/img/c3.jpg" class="img-fluid" alt="Raj Sojitra" />
             </div>
+            
+            <!-- About Content -->
             <div class="col-lg-8 content">
               <h2>Web Developer</h2>
               <p class="fst-italic py-3"></p>
               <div class="row">
                 <div class="col-lg-6">
                   <ul>
-                     <li>
-                      <i class="bi bi-chevron-right"></i>
-                       <strong>Name:</strong> <span>Raj Sojitra</span></li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Birthday:</strong> <span>3 May 2004</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Website:</strong> <span>rajsojitra.com</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Mo. :</strong> <span>8469283448</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>City:</strong> <span>Ahmedabad</span>
-                    </li>
-                  <!-- </ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Raj Sojitra</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>3 May 2004</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>rajsojitra.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Mo. :</strong> <span>8469283448</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ahmedabad</span></li>
+                  </ul>
                 </div>
-                <div class="col-lg-6"> -->
+                <div class="col-lg-6">
                   <ul>
-                    <li>
-                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                      <span>20</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Degree:</strong> <span>Master of Computer Application</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Email:</strong>
-                      <span>rajsojitra52@gmail.com</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Freelance:</strong> <span>Available</span>
-                    </li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master of Computer Application</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rajsojitra52@gmail.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                   </ul>
                 </div>
               </div>
@@ -224,7 +144,7 @@
           </div>
         </div>
       </section>
-      <!-- /About Section -->
+      <!-- End About Section -->
 
       <!-- Skills Section -->
       <section id="skills" class="skills section light-background">
@@ -242,413 +162,245 @@
         <!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row skills-content skills-animation">
-            <div class="col-lg-6">
-              <div class="progress">
-                <span class="skill"
-                  ><span>HTML</span> <i class="val">100%</i></span
-                >
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"
-                  ><span>CSS</span> <i class="val">90%</i></span
-                >
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"
-                  ><span>JavaScript</span> <i class="val">75%</i></span
-                >
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill"
-                  ><span>Laravel</span> <i class="val">90%</i></span
-                >
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <!-- End Skills Item -->
+          <div class="row align-items-center">
+            <!-- Skills Image -->
+            <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-delay="200">
+              <img src="assets/img/skill2.png" alt="Programming Skills" class="img-fluid" style="max-width: 80%;" />
             </div>
 
+            <!-- Skills Icons Grid -->
             <div class="col-lg-6">
-              <div class="progress">
-                <span class="skill"
-                  ><span>MY SQL</span> <i class="val">85%</i></span
-                >
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+              <div class="skills-logo-container" data-aos="fade-left" data-aos-delay="300">
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                  <i class="devicon-html5-plain colored"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+                  <i class="devicon-css3-plain colored"></i>
+                  <span>CSS</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+                  <i class="devicon-javascript-plain colored"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="700">
+                  <i class="devicon-php-plain colored"></i>
+                  <span>PHP</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+                  <i class="devicon-laravel-plain colored"></i>
+                  <span>Laravel</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="900">
+                  <i class="devicon-mysql-plain colored"></i>
+                  <span>MySQL</span>
                 </div>
               </div>
-              <!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"
-                  ><span>PHP</span> <i class="val">95%</i></span
-                >
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>C</span> <i class="val">65%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="65"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <!-- End Skills Item -->
             </div>
           </div>
         </div>
       </section>
-      <!-- /Skills Section -->
+      <!-- End Skills Section -->
 
       <!-- Resume Section -->
-<section id="resume" class="resume section">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>🪪 Resume</h2>
-    <p>
-      A dedicated and passionate Full-Stack Web Developer with hands-on experience in Laravel, PHP, MySQL, and responsive front-end technologies. Strong problem-solving skills and a commitment to building efficient, user-friendly web applications.
-    </p>
-  </div>
-  <!-- End Section Title -->
-
-  <div class="container">
-    <div class="row">
-      <!-- Left Column -->
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="resume-title">Summary</h3>
-        <div class="resume-item pb-0">
-          <h4>Raj Sojitra</h4>
-          <p>
-            <em>
-              Motivated Web Developer with expertise in Laravel, PHP, MySQL, and front-end frameworks. Strong foundation in clean code practices, database design, and building scalable web applications.
-            </em>
-          </p>
-          <ul>
-            <li>Ahmedabad, Gujarat, India</li>
-            <li>+91 84692 83448</li>
-            <li>rajsojitra52@gmail.com</li>
-          </ul>
-        </div>
-
-        <h3 class="resume-title">Education</h3>
-        <div class="resume-item">
-          <h4>Master's in Computer Application (Pursuing)</h4>
-          <h5>2024 - Present</h5>
-          <p><em>LJ University, Ahmedabad, Gujarat</em></p>
-          <p>
-            Continuing my education to strengthen theoretical and practical knowledge in web and software development.
-          </p>
-        </div>
-
-        <div class="resume-item">
-          <h4>Bachelor of Computer Application</h4>
-          <h5>2021 - 2024</h5>
-          <p><em>Saurashtra University, Rajkot, Gujarat</em></p>
-          <p>
-            Focused on programming, database management, and building full-stack applications using PHP and related technologies.
-          </p>
-        </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <h3 class="resume-title">Professional Experience</h3>
-
-        <div class="resume-item">
-          <h4>Freelance Web Developer</h4>
-          <h5>2023 - Present</h5>
-          <p><em>Ahmedabad, Gujarat</em></p>
-          <ul>
-            <li>Developed dynamic and responsive websites using Laravel, PHP, MySQL, and AdminLTE.</li>
-            <li>Created dashboard and admin panel functionality for client projects with user authentication and data visualization.</li>
-            <li>Integrated secure database systems and optimized back-end processes.</li>
-            <li>Provided continuous support, debugging, and performance enhancement for deployed applications.</li>
-          </ul>
-        </div>
-
-        <div class="resume-item">
-          <h4>Intern – Web Development</h4>
-          <h5>2022 - 2023</h5>
-          <p><em>Local Startup / Academic Projects</em></p>
-          <ul>
-            <li>Worked on academic and real-world projects including inventory, billing, and portfolio systems.</li>
-            <li>Collaborated on UI/UX design with a focus on responsive front-end using HTML, CSS, JS.</li>
-            <li>Integrated back-end APIs and handled database design with MySQL.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /Resume Section -->
-
-
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section light-background">
+      <section id="resume" class="resume section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>🏆 Certificate</h2>
+          <h2>🪪 Resume</h2>
           <p>
-            These certificates represent my dedication to continuous learning
-            and growth in web development and programming. Each reflects skills
-            I've acquired through industry-recognized platforms and training
-            programs.
+            A dedicated and passionate Full-Stack Web Developer with hands-on experience in Laravel, PHP, MySQL, and responsive front-end technologies. Strong problem-solving skills and a commitment to building efficient, user-friendly web applications.
           </p>
         </div>
         <!-- End Section Title -->
 
         <div class="container">
-          <div
-            class="isotope-layout"
-            data-default-filter="*"
-            data-layout="masonry"
-            data-sort="original-order"
-          >
-            <div
-              class="row gy-4 isotope-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/certificate/html.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a
-                      href="assets/img/certificate/html.jpg"
-                      title="App 1"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
+          <div class="row">
+            <!-- Left Column - Summary & Education -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Summary</h3>
+              <div class="resume-item pb-0">
+                <h4>Raj Sojitra</h4>
+                <p>
+                  <em>
+                    Motivated Web Developer with expertise in Laravel, PHP, MySQL, and front-end frameworks. Strong foundation in clean code practices, database design, and building scalable web applications.
+                  </em>
+                </p>
+                <ul>
+                  <li>Ahmedabad, Gujarat, India</li>
+                  <li>+91 84692 83448</li>
+                  <li>rajsojitra52@gmail.com</li>
+                </ul>
               </div>
-              <!-- End Portfolio Item -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/certificate/html.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a
-                      href="assets/img/certificate/html.jpg"
-                      title="App 1"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
+
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Master's in Computer Application (Pursuing)</h4>
+                <h5>2024 - Present</h5>
+                <p><em>LJ University, Ahmedabad, Gujarat</em></p>
+                <p>
+                  Continuing my education to strengthen theoretical and practical knowledge in web and software development.
+                </p>
               </div>
-              <!-- End Portfolio Item -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/certificate/html.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a
-                      href="assets/img/certificate/html.jpg"
-                      title="App 1"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
+
+              <div class="resume-item">
+                <h4>Bachelor of Computer Application</h4>
+                <h5>2021 - 2024</h5>
+                <p><em>Saurashtra University, Rajkot, Gujarat</em></p>
+                <p>
+                  Focused on programming, database management, and building full-stack applications using PHP and related technologies.
+                </p>
               </div>
-              <!-- End Portfolio Item -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/certificate/html.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a
-                      href="assets/img/certificate/html.jpg"
-                      title="App 1"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/certificate/html.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a
-                      href="assets/img/certificate/html.jpg"
-                      title="App 1"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/certificate/html.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a
-                      href="assets/img/certificate/html.jpg"
-                      title="App 1"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
             </div>
-            <!-- End Portfolio Container -->
+
+            <!-- Right Column - Professional Experience -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional Experience</h3>
+
+              <div class="resume-item">
+                <h4>Freelance Web Developer</h4>
+                <h5>2023 - Present</h5>
+                <p><em>Ahmedabad, Gujarat</em></p>
+                <ul>
+                  <li>Developed dynamic and responsive websites using Laravel, PHP, MySQL, and AdminLTE.</li>
+                  <li>Created dashboard and admin panel functionality for client projects with user authentication and data visualization.</li>
+                  <li>Integrated secure database systems and optimized back-end processes.</li>
+                  <li>Provided continuous support, debugging, and performance enhancement for deployed applications.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Intern – Web Development</h4>
+                <h5>2022 - 2023</h5>
+                <p><em>Local Startup / Academic Projects</em></p>
+                <ul>
+                  <li>Worked on academic and real-world projects including inventory, billing, and portfolio systems.</li>
+                  <li>Collaborated on UI/UX design with a focus on responsive front-end using HTML, CSS, JS.</li>
+                  <li>Integrated back-end APIs and handled database design with MySQL.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!-- /Portfolio Section -->
+      <!-- End Resume Section -->
+
+      <!-- Certificate Section -->
+      <section id="portfolio" class="portfolio section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>🏆 Certificate</h2>
+          <p>
+            These certificates represent my dedication to continuous learning and growth in web development and programming. Each reflects skills I've acquired through industry-recognized platforms and training programs.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+            <!-- HTML Certificate -->
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/certificate/html.jpg" class="img-fluid" alt="HTML Certificate" />
+                <div class="portfolio-info">
+                  <h4>HTML Certificate</h4>
+                  <p>Completed HTML fundamentals training.</p>
+                  <a href="assets/img/certificate/html.jpg" class="glightbox preview-link" title="HTML Certificate">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CSS Certificate -->
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/certificate/css.jpg" class="img-fluid" alt="CSS Certificate" />
+                <div class="portfolio-info">
+                  <h4>CSS Certificate</h4>
+                  <p>Mastered styling techniques and responsive design.</p>
+                  <a href="assets/img/certificate/css.jpg" class="glightbox preview-link" title="CSS Certificate">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- JavaScript Certificate -->
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/certificate/javascript.jpg" class="img-fluid" alt="JavaScript Certificate" />
+                <div class="portfolio-info">
+                  <h4>JavaScript Certificate</h4>
+                  <p>Learned dynamic scripting, DOM manipulation, and ES6.</p>
+                  <a href="assets/img/certificate/javascript.jpg" class="glightbox preview-link" title="JavaScript Certificate">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Laravel Certificate -->
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/certificate/laravel.jpg" class="img-fluid" alt="Laravel Certificate" />
+                <div class="portfolio-info">
+                  <h4>Laravel Certificate</h4>
+                  <p>Built full-stack applications using Laravel framework.</p>
+                  <a href="assets/img/certificate/laravel.jpg" class="glightbox preview-link" title="Laravel Certificate">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- SQL Certificate -->
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/certificate/sql.jpg" class="img-fluid" alt="SQL Certificate" />
+                <div class="portfolio-info">
+                  <h4>SQL Certificate</h4>
+                  <p>Gained skills in relational databases and queries.</p>
+                  <a href="assets/img/certificate/sql.jpg" class="glightbox preview-link" title="SQL Certificate">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- C Programming Certificate -->
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/certificate/c.jpg" class="img-fluid" alt="C Programming Certificate" />
+                <div class="portfolio-info">
+                  <h4>C Programming Certificate</h4>
+                  <p>Developed problem-solving skills in low-level programming.</p>
+                  <a href="assets/img/certificate/c.jpg" class="glightbox preview-link" title="C Programming Certificate">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="portfolio-details.html" class="details-link" title="More Details">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Certificate Section -->
 
       <!-- Services Section -->
       <section id="services" class="services section">
@@ -667,20 +419,14 @@
         <div class="container">
           <div class="row gy-4">
             
-            <!-- Full-Stack Web Development -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <!-- Full-Stack Web Development Service -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
               <div class="icon flex-shrink-0">
                 <i class="bi bi-code-slash"></i>
               </div>
               <div>
                 <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Full-Stack Web Development</a
-                  >
+                  <a href="#services" class="stretched-link">Full-Stack Web Development</a>
                 </h4>
                 <p class="description">
                   I build complete, end-to-end web solutions using modern
@@ -690,22 +436,15 @@
                 </p>
               </div>
             </div>
-            
 
-            <!-- Backend Development -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+            <!-- Backend Development Service -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
               <div class="icon flex-shrink-0">
                 <i class="bi bi-hdd-network"></i>
               </div>
               <div>
                 <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Backend Development (Laravel, PHP)</a
-                  >
+                  <a href="#services" class="stretched-link">Backend Development (Laravel, PHP)</a>
                 </h4>
                 <p class="description">
                   I specialize in developing powerful and efficient backend
@@ -716,20 +455,14 @@
               </div>
             </div>
 
-            <!-- Database Design -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
+            <!-- Database Design Service -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <div class="icon flex-shrink-0">
                 <i class="bi bi-database-check"></i>
               </div>
               <div>
                 <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Database Design (MySQL)</a
-                  >
+                  <a href="#services" class="stretched-link">Database Design (MySQL)</a>
                 </h4>
                 <p class="description">
                   A solid database is the backbone of any application. I design
@@ -739,20 +472,14 @@
               </div>
             </div>
 
-            <!-- Admin Panel Integration -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
+            <!-- Admin Panel Integration Service -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <div class="icon flex-shrink-0">
                 <i class="bi bi-layout-text-sidebar-reverse"></i>
               </div>
               <div>
                 <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Admin Panel Integration (AdminLTE)</a
-                  >
+                  <a href="#services" class="stretched-link">Admin Panel Integration (AdminLTE)</a>
                 </h4>
                 <p class="description">
                   I integrate AdminLTE into Laravel to build clean, functional
@@ -762,20 +489,14 @@
               </div>
             </div>
 
-            <!-- Bug Fixing & Optimization -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
+            <!-- Bug Fixing & Optimization Service -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
               <div class="icon flex-shrink-0">
                 <i class="bi bi-bug-fill"></i>
               </div>
               <div>
                 <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Bug Fixing & Optimization</a
-                  >
+                  <a href="#services" class="stretched-link">Bug Fixing & Optimization</a>
                 </h4>
                 <p class="description">
                   Whether your site is loading slow or behaving unexpectedly, I
@@ -784,20 +505,15 @@
                 </p>
               </div>
             </div>
-            <!-- Front-End Responsive Design -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
+
+            <!-- Front-End Responsive Design Service -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
               <div class="icon flex-shrink-0">
                 <i class="bi bi-phone-landscape"></i>
               </div>
               <div>
                 <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Front-End Responsive Design</a
-                  >
+                  <a href="#services" class="stretched-link">Front-End Responsive Design</a>
                 </h4>
                 <p class="description">
                   Using HTML, CSS, JavaScript, and Bootstrap, I create intuitive
@@ -809,127 +525,120 @@
           </div>
         </div>
       </section>
-      <!-- /Services Section -->
+      <!-- End Services Section -->
 
-    <!-- Projects Section -->
-<section id="projects" class="projects section light-background">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>🗂️ My Projects</h2>
-    <p>Explore some of the web development projects I’ve built using Laravel, AdminLTE, JavaScript, and more. Tap on images to view GitHub links.</p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          },
-          "breakpoints": {
-            "320": {
-              "slidesPerView": 1,
-              "spaceBetween": 20
-            },
-            "992": {
-              "slidesPerView": 2,
-              "spaceBetween": 30
-            },
-            "1200": {
-              "slidesPerView": 3,
-              "spaceBetween": 40
-            }
-          }
-        }
-      </script>
-
-      <div class="swiper-wrapper">
-        <!-- Project 1 -->
-        <div class="swiper-slide">
-          <div class="card project-card" data-aos="zoom-in">
-            <div class="image-wrapper">
-              <img src="assets/img/projects/p1.png" class="card-img-top project-image" alt="E-Commerce Project">
-              <a href="https://github.com/rajsojitra11" target="_blank" class="github-icon">
-                <i class="bi bi-github"></i>
-              </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">E-Commerce Platform</h5>
-              <p class="card-text">Laravel-based store with AdminLTE UI, invoice management, auth, and filtering.</p>
-              <a href="https://github.com/rajsojitra11" target="_blank">
-               👁️ View
-              </a>
-            </div>
-          </div>
+      <!-- Projects Section -->
+      <section id="projects" class="projects section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>🗂️ My Projects</h2>
+          <p>Explore some of the web development projects I've built using Laravel, AdminLTE, JavaScript, and more. Tap on images to view GitHub links.</p>
         </div>
 
-        <!-- Project 2 -->
-        <div class="swiper-slide">
-          <div class="card project-card" data-aos="zoom-in" data-aos-delay="100">
-            <div class="image-wrapper">
-              <img src="assets/img/projects/p2.png" class="card-img-top project-image" alt="Portfolio Website">
-              
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <!-- Swiper Configuration -->
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 20
+                  },
+                  "992": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 30
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 40
+                  }
+                }
+              }
+            </script>
+
+            <div class="swiper-wrapper">
+              <!-- Project 1: E-Commerce Platform -->
+              <div class="swiper-slide">
+                <div class="card project-card" data-aos="zoom-in">
+                  <div class="image-wrapper">
+                    <img src="assets/img/projects/p1.png" class="card-img-top project-image" alt="E-Commerce Project">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">E-Commerce Platform</h5>
+                    <p class="card-text">Laravel-based store with AdminLTE UI, invoice management, auth, and filtering.</p>
+                    <a href="https://github.com/rajsojitra11" target="_blank" aria-label="View E-Commerce Project">
+                     👁️ View
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2: Animated Portfolio -->
+              <div class="swiper-slide">
+                <div class="card project-card" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="image-wrapper">
+                    <img src="assets/img/projects/p2.png" class="card-img-top project-image" alt="Portfolio Website">
+                   </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Animated Portfolio</h5>
+                    <p class="card-text">Fully responsive animated HTML/CSS/JS portfolio with Bootstrap 5.</p>
+                    <a href="https://github.com/rajsojitra11" target="_blank" aria-label="View Portfolio Project">
+                     👁️ View
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3: Expense Tracker -->
+              <div class="swiper-slide">
+                <div class="card project-card" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="image-wrapper">
+                    <img src="assets/img/projects/p3.png" class="card-img-top project-image" alt="Expense Tracker">               
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Expense Tracker</h5>
+                    <p class="card-text">Track income/expenses with charts & dashboards using Laravel and Chart.js.</p>
+                    <a href="https://github.com/rajsojitra11" target="_blank" aria-label="View Expense Tracker Project">
+                      👁️ View
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 4: Authentication System -->
+              <div class="swiper-slide">
+                <div class="card project-card" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="image-wrapper">
+                    <img src="assets/img/projects/p1.png" class="card-img-top project-image" alt="Auth System">               
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Auth System</h5>
+                    <p class="card-text">Login/register system with session & dashboard using Laravel Auth.</p>
+                    <a href="https://github.com/rajsojitra11" target="_blank" aria-label="View Auth System Project">
+                     👁️ View
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Animated Portfolio</h5>
-              <p class="card-text">Fully responsive animated HTML/CSS/JS portfolio with Bootstrap 5.</p>
-              <a href="https://github.com/rajsojitra11" target="_blank">
-               👁️ View
-              </a>
-            </div>
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination mt-3"></div>
           </div>
         </div>
-
-        <!-- Project 3 -->
-        <div class="swiper-slide">
-          <div class="card project-card" data-aos="zoom-in" data-aos-delay="200">
-            <div class="image-wrapper">
-              <img src="assets/img/projects/p3.png" class="card-img-top project-image" alt="Expense Tracker">
-              <a href="https://github.com/rajsojitra11" target="_blank" class="github-icon">
-                <i class="bi bi-github"></i>
-              </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Expense Tracker</h5>
-              <p class="card-text">Track income/expenses with charts & dashboards using Laravel and Chart.js.</p>
-              <a href="https://github.com/rajsojitra11" target="_blank">
-                👁️ View
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="swiper-slide">
-          <div class="card project-card" data-aos="zoom-in" data-aos-delay="300">
-            <div class="image-wrapper">
-              <img src="assets/img/projects/p1.png" class="card-img-top project-image" alt="Auth System">
-              <a href="https://github.com/rajsojitra11" target="_blank" class="github-icon">
-                <i class="bi bi-github"></i>
-              </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Auth System</h5>
-              <p class="card-text">Login/register system with session & dashboard using Laravel Auth.</p>
-              <a href="https://github.com/rajsojitra11" target="_blank">
-               👁️ View
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-pagination mt-3"></div>
-    </div>
-  </div>
-</section>
+      </section>
+      <!-- End Projects Section -->
 
       <!-- Contact Section -->
       <section id="contact" class="contact section">
@@ -946,109 +655,73 @@
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
+            <!-- Contact Information -->
             <div class="col-lg-5">
               <div class="info-wrap">
-                <div
-                  class="info-item d-flex"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
+                <!-- Address -->
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                   <i class="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
                     <h3>Address</h3>
                     <p>Ahmedabad , Gujarat</p>
                   </div>
                 </div>
-                <!-- End Info Item -->
 
-                <div
-                  class="info-item d-flex"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
+                <!-- Phone -->
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-telephone flex-shrink-0"></i>
                   <div>
                     <h3>Call Us</h3>
                     <p>8469283448</p>
                   </div>
                 </div>
-                <!-- End Info Item -->
 
-                <div
-                  class="info-item d-flex"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
+                <!-- Email -->
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>
                     <h3>Email Us</h3>
                     <p>rajsojitra52@gmail.com</p>
                   </div>
                 </div>
-                <!-- End Info Item -->
               </div>
             </div>
 
+            <!-- Contact Form -->
             <div class="col-lg-7">
-              <form
-                action="forms/contact.php"
-                method="post"
-                class="php-email-form"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-4">
+                  <!-- Name Field -->
                   <div class="col-md-6">
                     <label for="name-field" class="pb-2">Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name-field"
-                      class="form-control"
-                      required=""
-                    />
+                    <input type="text" name="name" id="name-field" class="form-control" required />
                   </div>
 
+                  <!-- Email Field -->
                   <div class="col-md-6">
                     <label for="email-field" class="pb-2">Your Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email-field"
-                      required=""
-                    />
+                    <input type="email" class="form-control" name="email" id="email-field" required />
                   </div>
 
+                  <!-- Subject Field -->
                   <div class="col-md-12">
                     <label for="subject-field" class="pb-2">Subject</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      id="subject-field"
-                      required=""
-                    />
+                    <input type="text" class="form-control" name="subject" id="subject-field" required />
                   </div>
 
+                  <!-- Message Field -->
                   <div class="col-md-12">
                     <label for="message-field" class="pb-2">Message</label>
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="10"
-                      id="message-field"
-                      required=""
-                    ></textarea>
+                    <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
                   </div>
 
+                  <!-- Submit Button -->
                   <div class="col-md-12 text-center">
                     <div class="loading">Loading</div>
                     <div class="error-message"></div>
                     <div class="sent-message">
                       Your message has been sent. Thank you!
                     </div>
-
                     <button type="submit">Send Message</button>
                   </div>
                 </div>
@@ -1058,35 +731,29 @@
           </div>
         </div>
       </section>
-      <!-- /Contact Section -->
+      <!-- End Contact Section -->
     </main>
 
+    <!-- Footer -->
     <footer id="footer" class="footer position-relative light-background">
       <div class="container">
         <div class="copyright text-center">
           <p>
             © <span>Copyright</span>
-            <strong class="px-1 sitename">iPortfolio</strong>
+            <strong class="px-1 sitename">Portfolio</strong>
             <span>All Rights Reserved</span>
           </p>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="#">Raj sojitra</a>
         </div>
       </div>
     </footer>
 
-    <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <!-- Scroll to Top Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
 
     <!-- Preloader -->
     <div id="preloader"></div>
