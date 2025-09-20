@@ -2,7 +2,7 @@
 
 Welcome to the official repository for my personal portfolio website, built to showcase my skills, projects, and services as a web developer.
 
-🔗 **Live Site**: [raj-sojitra-portfolio.vercel.app](https://raj-sojitra-portfolio.vercel.app/)
+🔗 **Live Site**: https://raj-sojitra-portfolio.vercel.app/
 
 ## 📌 Features
 
@@ -14,9 +14,6 @@ Welcome to the official repository for my personal portfolio website, built to s
 - Smooth navigation and section-based layout
 - Built using HTML, CSS, JavaScript, and Bootstrap
 
-## 📷 Preview
-
-![Portfolio Preview](https://raj-sojitra-portfolio.vercel.app/assets/img/hero-img.png)
 
 ## 🧑‍💻 Technologies Used
 
@@ -27,15 +24,7 @@ Welcome to the official repository for my personal portfolio website, built to s
 - AOS (Animate on Scroll)
 - Boxicons / Bootstrap Icons
 
-## 🧰 Installation
-
-To run locally:
-
-```bash
-git clone https://github.com/rajsojitra11/portfolio2.git
-cd portfolio
-open index.html
-
+## Structure
 
 portfolio/
 ├── assets/
