@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta charset and viewport for responsive behavior -->
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Document title and SEO meta tags -->
     <title>Raj Sojitra - Web Developer Portfolio</title>
     <meta
       content="Professional portfolio of Raj Sojitra - Full Stack Web Developer specializing in Laravel, PHP, MySQL"
       name="description"
     />
     <meta
-      content="web developer, portfolio, Laravel, PHP, MySQL, freelancer"
+      content="web developer, portfolio, Laravel, PHP, MySQL"
       name="keywords"
     />
 
@@ -17,7 +20,7 @@
     <link href="assets/img/portfolio.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts preconnect and families -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
@@ -52,8 +55,11 @@
   </head>
 
   <body class="index-page">
-    <!-- Header/Sidebar Navigation -->
+    <!-- =========================
+         Header/Sidebar Navigation
+         ========================= -->
     <header id="header" class="header dark-background d-flex flex-column">
+      <!-- Mobile nav toggle button (Bootstrap Icons) -->
       <i class="header-toggle d-xl-none bi bi-list"></i>
 
       <!-- Profile Image -->
@@ -75,9 +81,9 @@
 
       <!-- Social Media Links -->
       <div class="social-links text-center">
-        <a href="#" class="facebook" aria-label="Facebook"
-          ><i class="bi bi-facebook"></i
-        ></a>
+        <a href="#" class="facebook" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
         <a
           href="https://www.instagram.com/the_raj_patel__01/profilecard/?igsh=MWZ1bXc5azl3dHRzcA=="
           class="instagram"
@@ -105,54 +111,65 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li>
-            <a href="#hero" class="active"
-              ><i class="bi bi-house navicon"></i>Home</a
-            >
+            <a href="#hero" class="active">
+              <i class="bi bi-house navicon"></i>Home
+            </a>
           </li>
           <li>
-            <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+            <a href="#about"> <i class="bi bi-person navicon"></i> About </a>
           </li>
           <li>
-            <a href="#resume"
-              ><i class="bi bi-file-earmark-text navicon"></i> Resume</a
-            >
+            <a href="#resume">
+              <i class="bi bi-file-earmark-text navicon"></i> Resume
+            </a>
           </li>
           <li>
-            <a href="#portfolio"
-              ><i class="bi bi-award navicon"></i> Certificate</a
-            >
+            <a href="#portfolio">
+              <i class="bi bi-award navicon"></i> Certificate
+            </a>
           </li>
           <li>
-            <a href="#services"><i class="bi bi-tools navicon"></i> Services</a>
+            <a href="#services">
+              <i class="bi bi-tools navicon"></i> Services
+            </a>
           </li>
           <li>
-            <a href="#projects"
-              ><i class="bi bi-archive navicon"></i> Projects</a
-            >
+            <a href="#projects">
+              <i class="bi bi-archive navicon"></i> Projects
+            </a>
           </li>
           <li>
-            <a href="#contact"
-              ><i class="bi bi-envelope navicon"></i> Contact</a
-            >
+            <a href="#contact">
+              <i class="bi bi-envelope navicon"></i> Contact
+            </a>
           </li>
         </ul>
       </nav>
     </header>
 
+    <!-- ================
+         Main Content
+         ================ -->
     <main class="main">
-      <!-- Hero Section -->
+      <!-- =================
+           Hero Section
+           ================= -->
       <section id="hero" class="hero section dark-background">
+        <!-- Background image (remote) -->
         <img
           src="https://i.pinimg.com/736x/ac/a7/6d/aca76d77c329f55675e3e43c7c50ae04.jpg"
           alt="Hero Background"
           data-aos="fade-in"
         />
 
+        <!-- Intro container with typed.js hook -->
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <h2>Raj Sojitra</h2>
           <p>
-            I'm
-            <span class="typed" data-typed-items="Web Developer, Freelancer"
+            I'm a
+            <span
+              class="typed"
+              data-typed-items="Full-Stack Web Developer,Web Application Developer"
               >Web Developer</span
             >
             <span
@@ -164,7 +181,9 @@
       </section>
       <!-- End Hero Section -->
 
-      <!-- About Section -->
+      <!-- =================
+           About Section
+           ================= -->
       <section id="about" class="about section">
         <!-- Section Title -->
         <div
@@ -174,10 +193,11 @@
         >
           <h2>🧑‍💻 About me</h2>
           <p>
-            Hello! I'm Raj Sojitra, a passionate and dedicated Web Developer
-            based in Ahmedabad, Gujarat. With strong expertise in PHP, Laravel,
-            MySQL, HTML, CSS, and JavaScript, I specialize in building
-            responsive, user-friendly, and performance-driven web applications.
+            Hello! I'm Raj Sojitra, a passionate and dedicated Full-Stack Web
+            Developer based in Ahmedabad, Gujarat. I have strong expertise in
+            PHP, Laravel, MySQL, HTML, CSS, and JavaScript, and I specialize in
+            building responsive, user-friendly, and high-performance web
+            applications.
           </p>
         </div>
         <!-- End Section Title -->
@@ -193,11 +213,13 @@
               />
             </div>
 
-            <!-- About Content -->
+            <!-- About Content (bio details list) -->
             <div class="col-lg-8 content" data-aos-delay="100">
-              <h2>Web Developer</h2>
+              <h2>Full-Stack Developer</h2>
               <p class="fst-italic py-3"></p>
+
               <div class="row">
+                <!-- Left column details -->
                 <div class="col-lg-6">
                   <ul>
                     <li>
@@ -214,7 +236,7 @@
                     </li>
                     <li>
                       <i class="bi bi-dot text-primary"></i>
-                      <strong>Mobile:</strong> <span>8469283448</span>
+                      <strong>Call Us:</strong> <span>+91 8469283448</span>
                     </li>
                     <li>
                       <i class="bi bi-dot text-primary"></i>
@@ -227,6 +249,8 @@
                     </li>
                   </ul>
                 </div>
+
+                <!-- Right column details -->
                 <div class="col-lg-6">
                   <ul>
                     <li>
@@ -250,18 +274,22 @@
                     </li>
                     <li>
                       <i class="bi bi-dot text-primary"></i>
-                      <strong>Freelance:</strong> <span>Available</span>
+                      <strong>Other Skills:</strong>
+                      <span>SEO Basics, Version Control (Git/GitHub)</span>
                     </li>
                   </ul>
                 </div>
               </div>
+              <!-- End details grid -->
             </div>
           </div>
         </div>
       </section>
       <!-- End About Section -->
 
-      <!-- Skills Section -->
+      <!-- =================
+           Skills Section
+           ================= -->
       <section id="skills" class="skills section light-background">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -292,7 +320,7 @@
               />
             </div>
 
-            <!-- Skills Icons Grid -->
+            <!-- Skills Icons Grid (Devicon icons) -->
             <div class="col-lg-6">
               <div
                 class="skills-logo-container"
@@ -325,12 +353,15 @@
                 </div>
               </div>
             </div>
+            <!-- End skills grid -->
           </div>
         </div>
       </section>
       <!-- End Skills Section -->
 
-      <!-- Resume Section -->
+      <!-- =================
+           Resume Section
+           ================= -->
       <section id="resume" class="resume section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -393,25 +424,31 @@
               <h3 class="resume-title">Professional Experience</h3>
 
               <div class="resume-item">
-                <h4>Freelance Web Developer</h4>
+                <h4>Full-Stack Web Developer</h4>
                 <h5>2023 - Present</h5>
                 <p><em>Ahmedabad, Gujarat</em></p>
                 <ul>
                   <li>
-                    Developed dynamic and responsive websites using Laravel,
-                    PHP, MySQL, and AdminLTE.
+                    Developed dynamic, responsive, and high-performance web
+                    applications using Laravel, PHP, MySQL, JavaScript, HTML,
+                    CSS, and AdminLTE.
                   </li>
                   <li>
-                    Created dashboard and admin panel functionality for client
-                    projects with user authentication and data visualization.
+                    Designed and implemented dashboards and admin panels with
+                    user authentication, role management, and data
+                    visualization.
                   </li>
                   <li>
-                    Integrated secure database systems and optimized back-end
-                    processes.
+                    Built secure, optimized backend systems and integrated
+                    databases for scalable applications.
                   </li>
                   <li>
                     Provided continuous support, debugging, and performance
-                    enhancement for deployed applications.
+                    enhancements for deployed applications.
+                  </li>
+                  <li>
+                    Collaborated with clients to deliver tailored solutions
+                    aligned with business requirements.
                   </li>
                 </ul>
               </div>
@@ -419,7 +456,7 @@
               <div class="resume-item">
                 <h4>Intern – Web Development</h4>
                 <h5>2022 - 2023</h5>
-                <p><em>Local Startup / Academic Projects</em></p>
+                <p><em>Academic Projects</em></p>
                 <ul>
                   <li>
                     Worked on academic and real-world projects including
@@ -436,12 +473,15 @@
                 </ul>
               </div>
             </div>
+            <!-- End Right Column -->
           </div>
         </div>
       </section>
       <!-- End Resume Section -->
 
-      <!-- Certificate Section -->
+      <!-- =====================
+           Certificate Section
+           ===================== -->
       <section id="portfolio" class="portfolio section light-background">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -454,6 +494,7 @@
           </p>
         </div>
 
+        <!-- Certificates Grid -->
         <div class="container">
           <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
             <!-- HTML Certificate -->
@@ -631,28 +672,31 @@
                 </div>
               </div>
             </div>
+            <!-- End certificate items -->
           </div>
         </div>
       </section>
       <!-- End Certificate Section -->
 
-      <!-- Services Section -->
+      <!-- =================
+           Services Section
+           ================= -->
       <section id="services" class="services section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>🛠️ Services</h2>
           <p>
-            I offer a range of professional web development services, tailored
-            to help businesses and individuals bring their digital ideas to
-            life. From frontend design to backend architecture, I ensure every
-            solution is secure, scalable, and user-friendly.
+            I offer professional Full-Stack Web Development services to help
+            businesses and individuals bring their digital ideas to life. From
+            frontend design to backend architecture, I ensure every solution is
+            secure, scalable, and user-friendly.
           </p>
         </div>
-        <!-- End Section Title -->
 
+        <!-- Services Grid -->
         <div class="container">
           <div class="row gy-4">
-            <!-- Full-Stack Web Development Service -->
+            <!-- 1. Full-Stack Web Development -->
             <div
               class="col-lg-4 col-md-6 service-item d-flex"
               data-aos="fade-up"
@@ -668,15 +712,14 @@
                   >
                 </h4>
                 <p class="description">
-                  I build complete, end-to-end web solutions using modern
-                  technologies. From user interface to backend logic and
-                  database integration, I ensure your application is responsive,
-                  scalable, and secure.
+                  Build end-to-end web applications combining frontend, backend,
+                  and database integration. Ensure responsive, scalable, and
+                  secure solutions tailored to client needs.
                 </p>
               </div>
             </div>
 
-            <!-- Backend Development Service -->
+            <!-- 2. Backend Development -->
             <div
               class="col-lg-4 col-md-6 service-item d-flex"
               data-aos="fade-up"
@@ -692,15 +735,14 @@
                   >
                 </h4>
                 <p class="description">
-                  I specialize in developing powerful and efficient backend
-                  systems using Laravel and core PHP. This includes building
-                  APIs, user authentication, role management, and business logic
-                  tailored to your needs.
+                  Develop robust backend systems using Laravel and PHP,
+                  including APIs, authentication, role management, and business
+                  logic for dynamic applications.
                 </p>
               </div>
             </div>
 
-            <!-- Database Design Service -->
+            <!-- 3. Database Design -->
             <div
               class="col-lg-4 col-md-6 service-item d-flex"
               data-aos="fade-up"
@@ -716,14 +758,14 @@
                   >
                 </h4>
                 <p class="description">
-                  A solid database is the backbone of any application. I design
-                  and optimize MySQL databases that ensure fast queries, data
-                  integrity, and scalable relationships between tables.
+                  Design and optimize MySQL databases to ensure fast queries,
+                  secure storage, data integrity, and scalable relationships
+                  between tables.
                 </p>
               </div>
             </div>
 
-            <!-- Admin Panel Integration Service -->
+            <!-- 4. Admin Panel Integration -->
             <div
               class="col-lg-4 col-md-6 service-item d-flex"
               data-aos="fade-up"
@@ -739,41 +781,18 @@
                   >
                 </h4>
                 <p class="description">
-                  I integrate AdminLTE into Laravel to build clean, functional
-                  admin dashboards that help you manage your application's data,
-                  users, and content efficiently.
+                  Integrate AdminLTE into Laravel projects to create clean and
+                  functional dashboards, enabling efficient management of users,
+                  data, and content.
                 </p>
               </div>
             </div>
 
-            <!-- Bug Fixing & Optimization Service -->
+            <!-- 5. Front-End Responsive Design -->
             <div
               class="col-lg-4 col-md-6 service-item d-flex"
               data-aos="fade-up"
               data-aos-delay="500"
-            >
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-bug-fill"></i>
-              </div>
-              <div>
-                <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Bug Fixing & Optimization</a
-                  >
-                </h4>
-                <p class="description">
-                  Whether your site is loading slow or behaving unexpectedly, I
-                  troubleshoot issues and improve performance through code
-                  optimization, error fixing, and best development practices.
-                </p>
-              </div>
-            </div>
-
-            <!-- Front-End Responsive Design Service -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="600"
             >
               <div class="icon flex-shrink-0">
                 <i class="bi bi-phone-landscape"></i>
@@ -785,9 +804,32 @@
                   >
                 </h4>
                 <p class="description">
-                  Using HTML, CSS, JavaScript, and Bootstrap, I create intuitive
-                  and mobile-friendly user interfaces that provide a seamless
-                  experience across all devices.
+                  Create intuitive, mobile-friendly interfaces using HTML, CSS,
+                  JavaScript, and Bootstrap for a seamless experience across all
+                  devices.
+                </p>
+              </div>
+            </div>
+
+            <!-- 6. Bug Fixing & Optimization -->
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-bug-fill"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="#services" class="stretched-link"
+                    >Bug Fixing & Optimization</a
+                  >
+                </h4>
+                <p class="description">
+                  Troubleshoot and fix errors, optimize performance, and improve
+                  overall code quality to ensure smooth and reliable application
+                  performance.
                 </p>
               </div>
             </div>
@@ -796,8 +838,11 @@
       </section>
       <!-- End Services Section -->
 
-      <!-- Projects Section -->
+      <!-- =================
+           Projects Section
+           ================= -->
       <section id="projects" class="projects section light-background">
+        <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>🗂️ My Projects</h2>
           <p>
@@ -807,9 +852,10 @@
           </p>
         </div>
 
+        <!-- Swiper Slider Container -->
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper init-swiper">
-            <!-- Swiper Configuration -->
+            <!-- Swiper Configuration (JSON in script tag for main.js to read) -->
             <script type="application/json" class="swiper-config">
               {
                 "loop": true,
@@ -840,6 +886,7 @@
               }
             </script>
 
+            <!-- Slides wrapper -->
             <div class="swiper-wrapper">
               <!-- Project 1: E-Commerce Platform -->
               <div class="swiper-slide">
@@ -933,7 +980,7 @@
                 </div>
               </div>
 
-              <!-- Project 4: Authentication System -->
+              <!-- Project 4: Library Management System -->
               <div class="swiper-slide">
                 <div
                   class="card project-card"
@@ -964,6 +1011,7 @@
                   </div>
                 </div>
               </div>
+              <!-- End slides -->
             </div>
 
             <!-- Swiper Pagination -->
@@ -973,7 +1021,9 @@
       </section>
       <!-- End Projects Section -->
 
-      <!-- Contact Section -->
+      <!-- =================
+           Contact Section
+           ================= -->
       <section id="contact" class="contact section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -1032,7 +1082,7 @@
               </div>
             </div>
 
-            <!-- Contact Form -->
+            <!-- Contact Form (PHP backend: forms/contact.php) -->
             <div class="col-lg-7">
               <form
                 action="forms/contact.php"
@@ -1090,7 +1140,7 @@
                     ></textarea>
                   </div>
 
-                  <!-- Submit Button -->
+                  <!-- Submit Button and states -->
                   <div class="col-md-12 text-center">
                     <div class="loading">Loading</div>
                     <div class="error-message"></div>
@@ -1109,7 +1159,9 @@
       <!-- End Contact Section -->
     </main>
 
-    <!-- Footer -->
+    <!-- ================
+         Footer
+         ================ -->
     <footer id="footer" class="footer position-relative light-background">
       <div class="container">
         <div class="copyright text-center">
@@ -1119,7 +1171,7 @@
             <span>All Rights Reserved</span>
           </p>
         </div>
-        <div class="credits">Designed by <a href="#">Raj sojitra</a></div>
+        <div class="credits">Designed by <a href="#">Raj Sojitra</a></div>
       </div>
     </footer>
 
@@ -1135,7 +1187,9 @@
     <!-- Preloader -->
     <div id="preloader"></div>
 
-    <!-- Vendor JS Files -->
+    <!-- =================
+         Vendor JS Files
+         ================= -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -1147,7 +1201,9 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Main JS File -->
+    <!-- ================
+         Main JS File
+         ================ -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
