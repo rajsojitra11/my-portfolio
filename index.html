@@ -1,1209 +1,288 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Meta charset and viewport for responsive behavior -->
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-    <!-- Document title and SEO meta tags -->
-    <title>Raj Sojitra - Web Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raj Sojitra | Full-Stack Web Developer</title>
     <meta
-      content="Professional portfolio of Raj Sojitra - Full Stack Web Developer specializing in Laravel, PHP, MySQL"
       name="description"
+      content="Portfolio of Raj Sojitra, Full-Stack Web Developer focused on Laravel, PHP, MySQL, and responsive web applications."
     />
     <meta
-      content="web developer, portfolio, Laravel, PHP, MySQL"
       name="keywords"
+      content="Raj Sojitra, full stack developer, Laravel developer, PHP developer, web portfolio"
     />
 
-    <!-- Favicons -->
     <link href="assets/img/portfolio.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Google Fonts preconnect and families -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!-- DevIcon CSS for Technology Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-
-    <!-- Main CSS File -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
 
-  <body class="index-page">
-    <!-- =========================
-         Header/Sidebar Navigation
-         ========================= -->
-    <header id="header" class="header dark-background d-flex flex-column">
-      <!-- Mobile nav toggle button (Bootstrap Icons) -->
-      <i class="header-toggle d-xl-none bi bi-list"></i>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="bg-glow bg-glow-a"></div>
+      <div class="bg-glow bg-glow-b"></div>
+    </div>
 
-      <!-- Profile Image -->
-      <div class="profile-img">
-        <img
-          src="assets/img/c2.png"
-          alt="Raj Sojitra Profile"
-          class="img-fluid rounded-circle"
-        />
+    <header class="topbar" id="topbar">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Raj Sojitra Home">
+          <span class="brand-mobile-icon" aria-hidden="true">RS</span>
+          <span class="brand-text">Raj Sojitra</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <nav class="nav" id="siteNav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-
-      <!-- Logo/Name -->
-      <a
-        href="index.html"
-        class="logo d-flex align-items-center justify-content-center"
-      >
-        <h1 class="sitename">Raj Sojitra</h1>
-      </a>
-
-      <!-- Social Media Links -->
-      <div class="social-links text-center">
-        <a href="#" class="facebook" aria-label="Facebook">
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/the_raj_patel__01/profilecard/?igsh=MWZ1bXc5azl3dHRzcA=="
-          class="instagram"
-          aria-label="Instagram"
-        >
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a
-          href="https://github.com/rajsojitra11?tab=repositories"
-          class="google-plus"
-          aria-label="GitHub"
-        >
-          <i class="bi bi-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/raj-sojitra-0a96bb2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          class="linkedin"
-          aria-label="LinkedIn"
-        >
-          <i class="bi bi-linkedin"></i>
-        </a>
-      </div>
-
-      <!-- Navigation Menu -->
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li>
-            <a href="#hero" class="active">
-              <i class="bi bi-house navicon"></i>Home
-            </a>
-          </li>
-          <li>
-            <a href="#about"> <i class="bi bi-person navicon"></i> About </a>
-          </li>
-          <li>
-            <a href="#resume">
-              <i class="bi bi-file-earmark-text navicon"></i> Resume
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio">
-              <i class="bi bi-award navicon"></i> Certificate
-            </a>
-          </li>
-          <li>
-            <a href="#services">
-              <i class="bi bi-tools navicon"></i> Services
-            </a>
-          </li>
-          <li>
-            <a href="#projects">
-              <i class="bi bi-archive navicon"></i> Projects
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <i class="bi bi-envelope navicon"></i> Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
-    <!-- ================
-         Main Content
-         ================ -->
-    <main class="main">
-      <!-- =================
-           Hero Section
-           ================= -->
-      <section id="hero" class="hero section dark-background">
-        <!-- Background image (remote) -->
-        <img
-          src="https://i.pinimg.com/736x/ac/a7/6d/aca76d77c329f55675e3e43c7c50ae04.jpg"
-          alt="Hero Background"
-          data-aos="fade-in"
-        />
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-grid reveal">
+          <div>
+            <p class="eyebrow">Available for Freelance and Full-Time Roles</p>
+            <h1>Full-Stack Web Developer crafting reliable, business-ready products.</h1>
+            <p class="hero-copy">
+              I am Raj Sojitra, based in Ahmedabad, building secure and scalable web applications with
+              Laravel, PHP, MySQL, and modern front-end practices.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="mailto:rajsojitra52@gmail.com">Hire Me</a>
+            </div>
+          </div>
 
-        <!-- Intro container with typed.js hook -->
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <h2>Raj Sojitra</h2>
-          <p>
-            I'm a
-            <span
-              class="typed"
-              data-typed-items="Full-Stack Web Developer,Web Application Developer"
-              >PHP Developer</span
-            >
-            <span
-              class="typed-cursor typed-cursor--blink"
-              aria-hidden="true"
-            ></span>
-          </p>
+          <aside class="hero-card">
+            <img src="assets/img/c2.png" alt="Raj Sojitra" />
+            <div class="quick-meta">
+              <span><i class="bi bi-geo-alt"></i> Ahmedabad, Gujarat</span>
+              <span><i class="bi bi-telephone"></i> +91 84692 83448</span>
+              <span><i class="bi bi-envelope"></i> rajsojitra52@gmail.com</span>
+            </div>
+            <h2>Raj Sojitra</h2>
+            <p>Full-Stack Web Developer</p>
+            <div class="socials">
+              <a href="https://github.com/rajsojitra11?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/raj-sojitra-0a96bb2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/the_raj_patel__01/profilecard/?igsh=MWZ1bXc5azl3dHRzcA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="mailto:rajsojitra52@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            </div>
+          </aside>
         </div>
       </section>
-      <!-- End Hero Section -->
 
-      <!-- =================
-           About Section
-           ================= -->
-      <section id="about" class="about section">
-        <!-- Section Title -->
-        <div
-          class="container section-title"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <h2>🧑‍💻 About me</h2>
-          <p>
-            Hello! I'm Raj Sojitra, a passionate and dedicated Full-Stack Web
-            Developer based in Ahmedabad, Gujarat. I have strong expertise in
-            PHP, Laravel, MySQL, HTML, CSS, and JavaScript, and I specialize in
-            building responsive, user-friendly, and high-performance web
-            applications.
-          </p>
+      <section class="section" id="about">
+        <div class="container two-col reveal">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>Building practical web solutions with clean architecture and strong UX.</h2>
+            <p>
+              I have hands-on experience delivering web applications from planning to deployment.
+              My work focuses on performance, maintainable code, secure authentication flows,
+              and intuitive admin dashboards for real business operations.
+            </p>
+            <p>
+              Education: Master of Computer Application (2024-Present), LJ University, Ahmedabad.
+              Bachelor of Computer Application (2021-2024), Saurashtra University, Rajkot.
+            </p>
+          </div>
+          <div class="about-media">
+            <img src="assets/img/c3.jpg" alt="Developer portrait" />
+          </div>
         </div>
-        <!-- End Section Title -->
+      </section>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4 justify-content-center">
-            <!-- About Image -->
-            <div class="col-lg-4">
-              <img
-                src="assets/img/c3.jpg"
-                class="img-fluid rounded-5"
-                alt="Raj Sojitra"
-              />
-            </div>
+      <section class="section" id="skills">
+        <div class="container reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Core technology stack</h2>
+          <div class="chip-grid">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">PHP</span>
+            <span class="chip">Laravel</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">AdminLTE</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">Authentication</span>
+            <span class="chip">Role Management</span>
+            <span class="chip">Debugging and Optimization</span>
+          </div>
+        </div>
+      </section>
 
-            <!-- About Content (bio details list) -->
-            <div class="col-lg-8 content" data-aos-delay="100">
-              <h2>Full-Stack Developer</h2>
-              <p class="fst-italic py-3"></p>
+      <section class="section" id="experience">
+        <div class="container reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Professional timeline</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-head">
+                <h3>Backend Developer Intern | Rainstream Technology</h3>
+                <span>Jan 2026 - Apr 2026</span>
+              </div>
+              <p>Ahmedabad, Gujarat</p>
+              <ul>
+                <li>Built and maintained scalable web applications using PHP (Laravel).</li>
+                <li>Contributed to a custom ERP Company Portal for internal business operations.</li>
+                <li>Designed and developed RESTful APIs and backend logic for projects, users, attendance, tasks, and financial tracking.</li>
+                <li>Built and optimized MySQL schemas and queries for performance and data integrity.</li>
+                <li>Integrated backend services with dashboards to support real-time analytics and reporting.</li>
+                <li>Followed clean architecture, modular coding practices, and an API-first approach.</li>
+                <li>Independently designed complete backend architecture for the large-scale U-Matter platform.</li>
+                <li>Applied AI-assisted development (vibe coding) to speed delivery and improve implementation accuracy.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
 
-              <div class="row">
-                <!-- Left column details -->
-                <div class="col-lg-6">
+      <section class="section" id="services">
+        <div class="container reveal">
+          <p class="eyebrow">Services</p>
+          <h2>How I can help</h2>
+          <div class="card-grid">
+            <article class="card"><h3>Full-Stack Development</h3><p>End-to-end web application delivery from UI to backend and database.</p></article>
+            <article class="card"><h3>Laravel and PHP Backend</h3><p>Business logic, API design, authentication, and secure server-side architecture.</p></article>
+            <article class="card"><h3>MySQL Database Design</h3><p>Normalized schemas, efficient queries, and performance tuning for growth.</p></article>
+            <article class="card"><h3>Admin Dashboard Systems</h3><p>AdminLTE-powered dashboards for reporting, role control, and operational workflows.</p></article>
+            <article class="card"><h3>Responsive Frontend UI</h3><p>Clean, mobile-first interfaces for consistent usability across devices.</p></article>
+            <article class="card"><h3>Bug Fixing and Optimization</h3><p>Debugging, refactoring, and targeted improvements to increase stability.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Highlighted platforms</h2>
+          <div class="projects-grid">
+            <article class="project">
+              <img src="assets/img/projects/inventory.jpeg" alt="Company Portal ERP System" />
+              <div>
+                <h3>Company Portal - Custom ERP System</h3>
+                <p><strong>Tech Stack:</strong> Laravel (PHP), MySQL, REST APIs</p>
+                <p>
+                  A centralized ERP platform for internal operations across employee management, project tracking,
+                  attendance, task workflows, and financial operations through an interactive dashboard.
+                </p>
+                <details class="project-details">
+                  <summary>View details</summary>
+                  <p><strong>Key Functionalities</strong></p>
                   <ul>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>Name:</strong> <span>Raj Sojitra</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>Age:</strong> <span>21</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>Birthday:</strong> <span>3 May 2004</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>Call Us:</strong> <span>+91 8469283448</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>Email:</strong>
-                      <span>rajsojitra52@gmail.com</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>City:</strong> <span>Ahmedabad</span>
-                    </li>
+                    <li>Dashboard and reporting for projects, clients, users, and billable/non-billable hours.</li>
+                    <li>User and role management with access permission controls.</li>
+                    <li>Project lifecycle creation, assignment, and progress tracking.</li>
+                    <li>Attendance and resource management workflows.</li>
+                    <li>Invoice generation and financial record tracking.</li>
+                    <li>Task assignment, monitoring, document storage, and activity logs.</li>
                   </ul>
-                </div>
-
-                <!-- Right column details -->
-                <div class="col-lg-6">
+                  <p><strong>My Contribution</strong></p>
                   <ul>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>Degree:</strong>
-                      <span>Master of Computer Application</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>Languages:</strong>
-                      <span>English, Hindi, Gujarati</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>Specialization:</strong>
-                      <span>Laravel, PHP</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>Work Mode:</strong> <span>Remote & On-site</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-dot text-primary"></i>
-                      <strong>Other Skills:</strong>
-                      <span>SEO Basics, Version Control (Git/GitHub)</span>
-                    </li>
+                    <li>Developed backend APIs and business logic for all core ERP modules.</li>
+                    <li>Designed database relationships, normalization strategy, and schema structure.</li>
+                    <li>Optimized dashboard queries for better response performance.</li>
+                    <li>Implemented secure authentication and RBAC authorization flows.</li>
                   </ul>
-                </div>
+                </details>
               </div>
-              <!-- End details grid -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End About Section -->
-
-      <!-- =================
-           Skills Section
-           ================= -->
-      <section id="skills" class="skills section light-background">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>💻 Skills</h2>
-          <p>
-            I possess a well-rounded skill set in web development, combining
-            frontend creativity with backend logic to build efficient and
-            scalable web applications. My knowledge of modern frameworks,
-            languages, and databases allows me to deliver high-quality solutions
-            tailored to client needs.
-          </p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row align-items-center">
-            <!-- Skills Image -->
-            <div
-              class="col-lg-6 text-center"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <img
-                src="assets/img/skill2.png"
-                alt="Programming Skills"
-                class="img-fluid"
-                style="max-width: 80%"
-              />
-            </div>
-
-            <!-- Skills Icons Grid (Devicon icons) -->
-            <div class="col-lg-6">
-              <div
-                class="skills-logo-container"
-                data-aos="fade-left"
-                data-aos-delay="300"
-              >
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
-                  <i class="devicon-html5-plain colored"></i>
-                  <span>HTML</span>
-                </div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
-                  <i class="devicon-css3-plain colored"></i>
-                  <span>CSS</span>
-                </div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
-                  <i class="devicon-javascript-plain colored"></i>
-                  <span>JavaScript</span>
-                </div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="700">
-                  <i class="devicon-php-plain colored"></i>
-                  <span>PHP</span>
-                </div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="800">
-                  <i class="devicon-laravel-plain colored"></i>
-                  <span>Laravel</span>
-                </div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="900">
-                  <i class="devicon-mysql-plain colored"></i>
-                  <span>MySQL</span>
-                </div>
-              </div>
-            </div>
-            <!-- End skills grid -->
-          </div>
-        </div>
-      </section>
-      <!-- End Skills Section -->
-
-      <!-- =================
-           Resume Section
-           ================= -->
-      <section id="resume" class="resume section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>🪪 Resume</h2>
-          <p>
-            A dedicated and passionate Full-Stack Web Developer with hands-on
-            experience in Laravel, PHP, MySQL, and responsive front-end
-            technologies. Strong problem-solving skills and a commitment to
-            building efficient, user-friendly web applications.
-          </p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container">
-          <div class="row">
-            <!-- Left Column - Summary & Education -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Summary</h3>
-              <div class="resume-item pb-0">
-                <h4>Raj Sojitra</h4>
+            </article>
+            <article class="project">
+              <img src="assets/img/projects/portfolio.png" alt="U-Matter Aged Care Experience Rating Platform" />
+              <div>
+                <h3>U-Matter - Aged Care Experience Rating Platform (Australia)</h3>
+                <p><strong>Tech Stack:</strong> Flutter, Laravel, MySQL, Firebase, Google Maps API</p>
                 <p>
-                  <em>
-                    Motivated Web Developer with expertise in Laravel, PHP,
-                    MySQL, and front-end frameworks. Strong foundation in clean
-                    code practices, database design, and building scalable web
-                    applications.
-                  </em>
+                  A scalable mobile-first ecosystem with admin panel and public web portal for collecting,
+                  validating, and aggregating structured aged care feedback with transparent visual ratings.
                 </p>
-                <ul>
-                  <li>Ahmedabad, Gujarat, India</li>
-                  <li>+91 84692 83448</li>
-                  <li>rajsojitra52@gmail.com</li>
-                </ul>
+                <details class="project-details">
+                  <summary>View details</summary>
+                  <p><strong>Key Functionalities</strong></p>
+                  <ul>
+                    <li>Multi-role system for Staff, Providers, and Family members.</li>
+                    <li>Structured weighted rating engine with dynamic aggregation.</li>
+                    <li>Geofencing validation to ensure on-site review submissions.</li>
+                    <li>Public map interface with heart-based facility rating visualization.</li>
+                    <li>Advanced facility search and filtering by state, location, and rating criteria.</li>
+                    <li>Admin panel for facilities, users, reviews, and activity control.</li>
+                    <li>Provider subscription workflow for analytics access.</li>
+                    <li>OTP-based Firebase authentication with push and email notifications.</li>
+                  </ul>
+                  <p><strong>My Contribution</strong></p>
+                  <ul>
+                    <li>Independently designed full system architecture: mobile app, web portal, and backend.</li>
+                    <li>Built all Laravel APIs, database schema, and core business logic.</li>
+                    <li>Developed admin panel and public portal with Google Maps integration.</li>
+                    <li>Implemented facility search, filtering, and heart-icon rating visualization.</li>
+                    <li>Integrated Flutter application with backend services and rating workflows.</li>
+                    <li>Built geofencing validation and real-time rating aggregation engine.</li>
+                    <li>Used AI-assisted (vibe coding) practices to accelerate delivery and quality.</li>
+                  </ul>
+                </details>
               </div>
-
-              <h3 class="resume-title">Education</h3>
-              <div class="resume-item">
-                <h4>Master's in Computer Application (Pursuing)</h4>
-                <h5>2024 - Present</h5>
-                <p><em>LJ University, Ahmedabad, Gujarat</em></p>
-                <p>
-                  Continuing my education to strengthen theoretical and
-                  practical knowledge in web and software development.
-                </p>
-              </div>
-
-              <div class="resume-item">
-                <h4>Bachelor of Computer Application</h4>
-                <h5>2021 - 2024</h5>
-                <p><em>Saurashtra University, Rajkot, Gujarat</em></p>
-                <p>
-                  Focused on programming, database management, and building
-                  full-stack applications using PHP and related technologies.
-                </p>
-              </div>
-            </div>
-
-            <!-- Right Column - Professional Experience -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="resume-title">Professional Experience</h3>
-
-              <div class="resume-item">
-                <h4>Full-Stack Web Developer</h4>
-                <h5>2023 - Present</h5>
-                <p><em>Ahmedabad, Gujarat</em></p>
-                <ul>
-                  <li>
-                    Developed dynamic, responsive, and high-performance web
-                    applications using Laravel, PHP, MySQL, JavaScript, HTML,
-                    CSS, and AdminLTE.
-                  </li>
-                  <li>
-                    Designed and implemented dashboards and admin panels with
-                    user authentication, role management, and data
-                    visualization.
-                  </li>
-                  <li>
-                    Built secure, optimized backend systems and integrated
-                    databases for scalable applications.
-                  </li>
-                  <li>
-                    Provided continuous support, debugging, and performance
-                    enhancements for deployed applications.
-                  </li>
-                  <li>
-                    Collaborated with clients to deliver tailored solutions
-                    aligned with business requirements.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="resume-item">
-                <h4>Intern – Web Development</h4>
-                <h5>2022 - 2023</h5>
-                <p><em>Academic Projects</em></p>
-                <ul>
-                  <li>
-                    Worked on academic and real-world projects including
-                    inventory, billing, and portfolio systems.
-                  </li>
-                  <li>
-                    Collaborated on UI/UX design with a focus on responsive
-                    front-end using HTML, CSS, JS.
-                  </li>
-                  <li>
-                    Integrated back-end APIs and handled database design with
-                    MySQL.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- End Right Column -->
+            </article>
           </div>
         </div>
       </section>
-      <!-- End Resume Section -->
 
-      <!-- =====================
-           Certificate Section
-           ===================== -->
-      <section id="portfolio" class="portfolio section light-background">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>🏅 Certificate</h2>
-          <p>
-            These certificates represent my dedication to continuous learning
-            and growth in web development and programming. Each reflects skills
-            I've acquired through industry-recognized platforms and training
-            programs.
-          </p>
-        </div>
-
-        <!-- Certificates Grid -->
-        <div class="container">
-          <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-            <!-- HTML Certificate -->
-            <div class="col-lg-4 col-md-6">
-              <div class="portfolio-content h-100">
-                <img
-                  src="assets/img/certificate/html.jpg"
-                  class="img-fluid"
-                  alt="HTML Certificate"
-                />
-                <div class="portfolio-info">
-                  <h4>HTML Certificate</h4>
-                  <p>Completed HTML fundamentals training.</p>
-                  <a
-                    href="assets/img/certificate/html.jpg"
-                    class="glightbox preview-link"
-                    title="HTML Certificate"
-                  >
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                  <a
-                    href="portfolio-details.html"
-                    class="details-link"
-                    title="More Details"
-                  >
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- CSS Certificate -->
-            <div class="col-lg-4 col-md-6">
-              <div class="portfolio-content h-100">
-                <img
-                  src="assets/img/certificate/css.jpg"
-                  class="img-fluid"
-                  alt="CSS Certificate"
-                />
-                <div class="portfolio-info">
-                  <h4>CSS Certificate</h4>
-                  <p>Mastered styling techniques and responsive design.</p>
-                  <a
-                    href="assets/img/certificate/css.jpg"
-                    class="glightbox preview-link"
-                    title="CSS Certificate"
-                  >
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                  <a
-                    href="portfolio-details.html"
-                    class="details-link"
-                    title="More Details"
-                  >
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- JavaScript Certificate -->
-            <div class="col-lg-4 col-md-6">
-              <div class="portfolio-content h-100">
-                <img
-                  src="assets/img/certificate/javascript.jpg"
-                  class="img-fluid"
-                  alt="JavaScript Certificate"
-                />
-                <div class="portfolio-info">
-                  <h4>JavaScript Certificate</h4>
-                  <p>Learned dynamic scripting, DOM manipulation, and ES6.</p>
-                  <a
-                    href="assets/img/certificate/javascript.jpg"
-                    class="glightbox preview-link"
-                    title="JavaScript Certificate"
-                  >
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                  <a
-                    href="portfolio-details.html"
-                    class="details-link"
-                    title="More Details"
-                  >
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Laravel Certificate -->
-            <div class="col-lg-4 col-md-6">
-              <div class="portfolio-content h-100">
-                <img
-                  src="assets/img/certificate/laravel.jpg"
-                  class="img-fluid"
-                  alt="Laravel Certificate"
-                />
-                <div class="portfolio-info">
-                  <h4>Laravel Certificate</h4>
-                  <p>Built full-stack applications using Laravel framework.</p>
-                  <a
-                    href="assets/img/certificate/laravel.jpg"
-                    class="glightbox preview-link"
-                    title="Laravel Certificate"
-                  >
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                  <a
-                    href="portfolio-details.html"
-                    class="details-link"
-                    title="More Details"
-                  >
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- SQL Certificate -->
-            <div class="col-lg-4 col-md-6">
-              <div class="portfolio-content h-100">
-                <img
-                  src="assets/img/certificate/sql.jpg"
-                  class="img-fluid"
-                  alt="SQL Certificate"
-                />
-                <div class="portfolio-info">
-                  <h4>SQL Certificate</h4>
-                  <p>Gained skills in relational databases and queries.</p>
-                  <a
-                    href="assets/img/certificate/sql.jpg"
-                    class="glightbox preview-link"
-                    title="SQL Certificate"
-                  >
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                  <a
-                    href="portfolio-details.html"
-                    class="details-link"
-                    title="More Details"
-                  >
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- C Programming Certificate -->
-            <div class="col-lg-4 col-md-6">
-              <div class="portfolio-content h-100">
-                <img
-                  src="assets/img/certificate/c.jpg"
-                  class="img-fluid"
-                  alt="C Programming Certificate"
-                />
-                <div class="portfolio-info">
-                  <h4>C Programming Certificate</h4>
-                  <p>
-                    Developed problem-solving skills in low-level programming.
-                  </p>
-                  <a
-                    href="assets/img/certificate/c.jpg"
-                    class="glightbox preview-link"
-                    title="C Programming Certificate"
-                  >
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                  <a
-                    href="portfolio-details.html"
-                    class="details-link"
-                    title="More Details"
-                  >
-                    <i class="bi bi-link-45deg"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- End certificate items -->
-          </div>
-        </div>
-      </section>
-      <!-- End Certificate Section -->
-
-      <!-- =================
-           Services Section
-           ================= -->
-      <section id="services" class="services section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>🛠️ Services</h2>
-          <p>
-            I offer professional Full-Stack Web Development services to help
-            businesses and individuals bring their digital ideas to life. From
-            frontend design to backend architecture, I ensure every solution is
-            secure, scalable, and user-friendly.
-          </p>
-        </div>
-
-        <!-- Services Grid -->
-        <div class="container">
-          <div class="row gy-4">
-            <!-- 1. Full-Stack Web Development -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <div>
-                <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Full-Stack Web Development</a
-                  >
-                </h4>
-                <p class="description">
-                  Build end-to-end web applications combining frontend, backend,
-                  and database integration. Ensure responsive, scalable, and
-                  secure solutions tailored to client needs.
-                </p>
-              </div>
-            </div>
-
-            <!-- 2. Backend Development -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-hdd-network"></i>
-              </div>
-              <div>
-                <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Backend Development (Laravel, PHP)</a
-                  >
-                </h4>
-                <p class="description">
-                  Develop robust backend systems using Laravel and PHP,
-                  including APIs, authentication, role management, and business
-                  logic for dynamic applications.
-                </p>
-              </div>
-            </div>
-
-            <!-- 3. Database Design -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-database-check"></i>
-              </div>
-              <div>
-                <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Database Design (MySQL)</a
-                  >
-                </h4>
-                <p class="description">
-                  Design and optimize MySQL databases to ensure fast queries,
-                  secure storage, data integrity, and scalable relationships
-                  between tables.
-                </p>
-              </div>
-            </div>
-
-            <!-- 4. Admin Panel Integration -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-layout-text-sidebar-reverse"></i>
-              </div>
-              <div>
-                <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Admin Panel Integration (AdminLTE)</a
-                  >
-                </h4>
-                <p class="description">
-                  Integrate AdminLTE into Laravel projects to create clean and
-                  functional dashboards, enabling efficient management of users,
-                  data, and content.
-                </p>
-              </div>
-            </div>
-
-            <!-- 5. Front-End Responsive Design -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-phone-landscape"></i>
-              </div>
-              <div>
-                <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Front-End Responsive Design</a
-                  >
-                </h4>
-                <p class="description">
-                  Create intuitive, mobile-friendly interfaces using HTML, CSS,
-                  JavaScript, and Bootstrap for a seamless experience across all
-                  devices.
-                </p>
-              </div>
-            </div>
-
-            <!-- 6. Bug Fixing & Optimization -->
-            <div
-              class="col-lg-4 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div class="icon flex-shrink-0">
-                <i class="bi bi-bug-fill"></i>
-              </div>
-              <div>
-                <h4 class="title">
-                  <a href="#services" class="stretched-link"
-                    >Bug Fixing & Optimization</a
-                  >
-                </h4>
-                <p class="description">
-                  Troubleshoot and fix errors, optimize performance, and improve
-                  overall code quality to ensure smooth and reliable application
-                  performance.
-                </p>
-              </div>
+      <section class="section" id="contact">
+        <div class="container reveal contact-wrap">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let us build your next web product.</h2>
+            <p>Open to freelance projects, internships, and full-time opportunities.</p>
+            <div class="contact-list">
+              <p><i class="bi bi-geo-alt"></i> Ahmedabad, Gujarat, India</p>
+              <p><i class="bi bi-telephone"></i> +91 8469283448</p>
+              <p><i class="bi bi-envelope"></i> rajsojitra52@gmail.com</p>
             </div>
           </div>
+          <form class="contact-form" action="mailto:rajsojitra52@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
         </div>
       </section>
-      <!-- End Services Section -->
-
-      <!-- =================
-           Projects Section
-           ================= -->
-      <section id="projects" class="projects section light-background">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>🗂️ My Projects</h2>
-          <p>
-            Explore some of the web development projects I've built using
-            Laravel, AdminLTE, JavaScript, and more. Tap on images to view
-            GitHub links.
-          </p>
-        </div>
-
-        <!-- Swiper Slider Container -->
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper init-swiper">
-            <!-- Swiper Configuration (JSON in script tag for main.js to read) -->
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 1,
-                    "spaceBetween": 20
-                  },
-                  "992": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 30
-                  },
-                  "1200": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 40
-                  }
-                }
-              }
-            </script>
-
-            <!-- Slides wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Project 1: E-Commerce Platform -->
-              <div class="swiper-slide">
-                <div class="card project-card" data-aos="zoom-in">
-                  <div class="image-wrapper">
-                    <img
-                      src="assets/img/projects/ecom.jpeg"
-                      class="card-img-top project-image"
-                      alt="E-Commerce Project"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">E-Commerce Platform</h5>
-                    <p class="card-text">
-                      "PHP-based e-commerce system with AdminLTE UI, product and
-                      invoice management, user authentication, and dynamic
-                      filtering."
-                    </p>
-                    <a
-                      href="https://github.com/rajsojitra11/Ecommerce-web"
-                      target="_blank"
-                      aria-label="View E-Commerce Project"
-                    >
-                      View
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 2: Animated Portfolio -->
-              <div class="swiper-slide">
-                <div
-                  class="card project-card"
-                  data-aos="zoom-in"
-                  data-aos-delay="100"
-                >
-                  <div class="image-wrapper">
-                    <img
-                      src="assets/img/projects/portfolio.png"
-                      class="card-img-top project-image"
-                      alt="Portfolio Website"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Animated Portfolio</h5>
-                    <p class="card-text">
-                      "Created a fully responsive and interactive portfolio
-                      using Bootstrap 5, HTML/CSS, and JavaScript, featuring
-                      smooth animations and clean UI design."
-                    </p>
-                    <a
-                      href="https://github.com/rajsojitra11/portfolio2"
-                      target="_blank"
-                      aria-label="View Portfolio Project"
-                    >
-                      View
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 3: Expense Tracker -->
-              <div class="swiper-slide">
-                <div
-                  class="card project-card"
-                  data-aos="zoom-in"
-                  data-aos-delay="200"
-                >
-                  <div class="image-wrapper">
-                    <img
-                      src="assets/img/projects/inventory.jpeg"
-                      class="card-img-top project-image"
-                      alt="Expense Tracker"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Expense Tracker</h5>
-                    <p class="card-text">
-                      "Laravel-powered MyShop with AdminLTE UI: includes stock
-                      control, invoice creation, and Chart.js dashboards for
-                      tracking income and expenses."
-                    </p>
-                    <a
-                      href="https://github.com/rajsojitra11/myshop"
-                      target="_blank"
-                      aria-label="View Expense Tracker Project"
-                    >
-                      View
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 4: Library Management System -->
-              <div class="swiper-slide">
-                <div
-                  class="card project-card"
-                  data-aos="zoom-in"
-                  data-aos-delay="300"
-                >
-                  <div class="image-wrapper">
-                    <img
-                      src="assets/img/projects/library.jpeg"
-                      class="card-img-top project-image"
-                      alt="Auth System"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Library Management System</h5>
-                    <p class="card-text">
-                      "Built a Laravel-based Library Management System with
-                      features like book cataloging, member management,
-                      issue/return tracking, and role-based access control."
-                    </p>
-                    <a
-                      href="https://github.com/rajsojitra11/library_management_system"
-                      target="_blank"
-                      aria-label="View Auth System Project"
-                    >
-                      View
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- End slides -->
-            </div>
-
-            <!-- Swiper Pagination -->
-            <div class="swiper-pagination mt-3"></div>
-          </div>
-        </div>
-      </section>
-      <!-- End Projects Section -->
-
-      <!-- =================
-           Contact Section
-           ================= -->
-      <section id="contact" class="contact section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>📞 Contact</h2>
-          <p>
-            Feel free to get in touch for project inquiries, freelance
-            opportunities, or any collaboration ideas. I'm always open to
-            discussing new projects and creative opportunities.
-          </p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <!-- Contact Information -->
-            <div class="col-lg-5">
-              <div class="info-wrap">
-                <!-- Address -->
-                <div
-                  class="info-item d-flex"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <i class="bi bi-geo-alt flex-shrink-0"></i>
-                  <div>
-                    <h3>Address</h3>
-                    <p>Ahmedabad , Gujarat</p>
-                  </div>
-                </div>
-
-                <!-- Phone -->
-                <div
-                  class="info-item d-flex"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <i class="bi bi-telephone flex-shrink-0"></i>
-                  <div>
-                    <h3>Call Us</h3>
-                    <p>8469283448</p>
-                  </div>
-                </div>
-
-                <!-- Email -->
-                <div
-                  class="info-item d-flex"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
-                  <i class="bi bi-envelope flex-shrink-0"></i>
-                  <div>
-                    <h3>Email Us</h3>
-                    <p>rajsojitra52@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Contact Form (PHP backend: forms/contact.php) -->
-            <div class="col-lg-7">
-              <form
-                action="forms/contact.php"
-                method="post"
-                class="php-email-form"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="row gy-4">
-                  <!-- Name Field -->
-                  <div class="col-md-6">
-                    <label for="name-field" class="pb-2">Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name-field"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-
-                  <!-- Email Field -->
-                  <div class="col-md-6">
-                    <label for="email-field" class="pb-2">Your Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email-field"
-                      required
-                    />
-                  </div>
-
-                  <!-- Subject Field -->
-                  <div class="col-md-12">
-                    <label for="subject-field" class="pb-2">Subject</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      id="subject-field"
-                      required
-                    />
-                  </div>
-
-                  <!-- Message Field -->
-                  <div class="col-md-12">
-                    <label for="message-field" class="pb-2">Message</label>
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="10"
-                      id="message-field"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <!-- Submit Button and states -->
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-                    <button type="submit">Send Message</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!-- End Contact Form -->
-          </div>
-        </div>
-      </section>
-      <!-- End Contact Section -->
     </main>
 
-    <!-- ================
-         Footer
-         ================ -->
-    <footer id="footer" class="footer position-relative light-background">
-      <div class="container">
-        <div class="copyright text-center">
-          <p>
-            © <span>Copyright</span>
-            <strong class="px-1 sitename">Portfolio</strong>
-            <span>All Rights Reserved</span>
-          </p>
-        </div>
-        <div class="credits">Designed by <a href="#">Raj Sojitra</a></div>
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <p>&copy; <span id="year"></span> Raj Sojitra. All rights reserved.</p>
+        <a href="#home" class="back-top">Back to top <i class="bi bi-arrow-up"></i></a>
       </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-    >
-      <i class="bi bi-arrow-up-short"></i>
-    </a>
-
-    <!-- Preloader -->
-    <div id="preloader"></div>
-
-    <!-- =================
-         Vendor JS Files
-         ================= -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-    <!-- ================
-         Main JS File
-         ================ -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
