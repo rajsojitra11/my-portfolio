@@ -55,7 +55,7 @@
           obs.unobserve(entry.target);
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
 
     reveals.forEach((item) => observer.observe(item));
@@ -64,5 +64,55 @@
   const year = document.getElementById("year");
   if (year) {
     year.textContent = String(new Date().getFullYear());
+  }
+
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const scriptUrl = contactForm.dataset.scriptUrl;
+      if (
+        !scriptUrl ||
+        scriptUrl ===
+          "https://docs.google.com/spreadsheets/d/1_Z8Bi5c6z-zJjixGd0RyrP8x3ErQL7UwcpP-_522jg4/edit?usp=sharing"
+      ) {
+        alert("Please set your Google Apps Script URL in the contact form.");
+        return;
+      }
+
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn ? submitBtn.textContent : "";
+
+      try {
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Sending...";
+        }
+
+        const payload = new URLSearchParams({
+          name: String(contactForm.name.value || "").trim(),
+          email: String(contactForm.email.value || "").trim(),
+          message: String(contactForm.message.value || "").trim(),
+          submitted_at: new Date().toISOString(),
+        });
+
+        await fetch(scriptUrl, {
+          method: "POST",
+          mode: "no-cors",
+          body: payload,
+        });
+
+        alert("Message sent successfully!");
+        contactForm.reset();
+      } catch (error) {
+        alert("Failed to send message. Please try again.");
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalBtnText;
+        }
+      }
+    });
   }
 })();
